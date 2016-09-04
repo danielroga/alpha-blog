@@ -10,10 +10,10 @@ root 'pages#home'
                     # welcome => controller
                     # home    => action
 
-get 'about', to: 'pages#about'
-    
-    
+get 'about', to: 'pages#about'    
 get 'pages/blog', to: 'pages#blog'
+
+resources :articles
 
 
   # Example of regular route:
